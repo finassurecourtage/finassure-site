@@ -85,6 +85,8 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <a
               href={CRM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-lg border border-brand-200 px-3.5 py-2 text-sm font-medium text-brand-700 transition hover:bg-brand-50"
             >
               Espace pro
@@ -349,7 +351,7 @@ export default function Home() {
               <a href="#contact" className="rounded-lg bg-gold-500 px-6 py-3.5 text-sm font-semibold text-brand-950 transition hover:bg-gold-400">
                 Devenir partenaire
               </a>
-              <a href={CRM_URL} className="rounded-lg border border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10">
+              <a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10">
                 Accéder à l&apos;espace pro
               </a>
             </div>
@@ -448,7 +450,7 @@ export default function Home() {
               <ul className="mt-3 space-y-2 text-sm text-brand-200">
                 <li><a href="#partenaire" className="transition hover:text-white">Devenir partenaire</a></li>
                 <li><a href="#contact" className="transition hover:text-white">Contact</a></li>
-                <li><a href={CRM_URL} className="transition hover:text-white">Espace pro (CRM)</a></li>
+                <li><a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="transition hover:text-white">Espace pro (CRM)</a></li>
               </ul>
             </div>
           </div>
