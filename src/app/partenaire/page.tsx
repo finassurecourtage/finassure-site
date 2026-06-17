@@ -52,7 +52,7 @@ export default function PartenairePage() {
       {/* ===== Header ===== */}
       <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/95 shadow-sm">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-          <a href="/" className="flex items-center gap-2">
+          <a href="https://finassure.fr" className="flex items-center gap-2">
             <BrandLogo />
           </a>
           <div className="flex items-center gap-2">
@@ -327,7 +327,7 @@ export default function PartenairePage() {
             vous donne les moyens de réussir.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
-            <a href="/" className="transition hover:text-white">Site principal</a>
+            <a href="https://finassure.fr" className="transition hover:text-white">Site principal</a>
             <a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="transition hover:text-white">Espace pro (CRM)</a>
             <a href="#candidater" className="transition hover:text-white">Candidater</a>
           </div>
