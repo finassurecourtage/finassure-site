@@ -370,6 +370,11 @@ export default function Home() {
                 Société par actions simplifiée (SAS) au capital de 1 000 €<br />
                 Siège social : 144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine
               </address>
+              <p className="mt-4 text-sm text-brand-200">
+                <a href="mailto:conseil@finassure.fr" className="font-medium text-white transition hover:text-gold-400">
+                  conseil@finassure.fr
+                </a>
+              </p>
             </div>
             <div>
               <p className="text-sm font-semibold text-white">Produits</p>
