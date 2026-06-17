@@ -98,7 +98,7 @@ export function ContactForm() {
         {status === "sending" ? "Envoi…" : "Envoyer ma demande"}
       </button>
       <p className="text-center text-xs text-slate-400">
-        Réponse sous 24h · Sans engagement · contact@finassure.fr
+        Réponse sous 24h · Sans engagement · conseil@finassure.fr
       </p>
     </form>
   );

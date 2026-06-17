@@ -325,7 +325,7 @@ export default function Home() {
                 </span>
                 <div>
                   <p className="text-slate-400">Email</p>
-                  <p className="font-medium text-brand-900">contact@finassure.fr</p>
+                  <p className="font-medium text-brand-900">conseil@finassure.fr</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
