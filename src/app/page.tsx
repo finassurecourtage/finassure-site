@@ -52,9 +52,9 @@ const ADVANTAGES = [
 ];
 
 const STEPS = [
-  { n: "1", title: "Vous nous contactez", desc: "Par téléphone, email ou via le formulaire. On fait le point sur votre besoin." },
-  { n: "2", title: "On compare pour vous", desc: "Notre conseiller analyse votre situation et sélectionne les meilleures offres." },
-  { n: "3", title: "Vous économisez", desc: "On met en place votre nouveau contrat et on gère les formalités à votre place." },
+  { n: "1", title: "Vous nous contactez", desc: "Par téléphone, email ou via le formulaire. Nous faisons le point sur votre besoin." },
+  { n: "2", title: "Nous comparons pour vous", desc: "Notre conseiller analyse votre situation et sélectionne les meilleures offres." },
+  { n: "3", title: "Vous économisez", desc: "Nous mettons en place votre nouveau contrat et gérons les formalités à votre place." },
 ];
 
 export default function Home() {
@@ -70,7 +70,6 @@ export default function Home() {
             {[
               ["#produits", "Produits"],
               ["#pourquoi", "Pourquoi nous"],
-              ["#partenaire", "Devenir partenaire"],
               ["#contact", "Contact"],
             ].map(([href, label]) => (
               <a
@@ -307,71 +306,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== Devenir partenaire (bandeau image) ===== */}
-      <section id="partenaire" className="relative overflow-hidden py-24 text-white">
-        <div className="absolute inset-0 z-0 bg-brand-950">
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="none"
-            poster="/video/partner-poster.jpg"
-          >
-            <source src="/video/partner.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-950/97 via-brand-900/90 to-brand-900/70" />
-        </div>
-        <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-5 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-400">Réseau de distribution</p>
-            <h2 className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">
-              Devenez régie ou agent partenaire
-            </h2>
-            <p className="mt-4 max-w-lg text-brand-100">
-              Vous êtes un cabinet, une régie commerciale ou un commercial en
-              assurance ? Rejoignez le réseau FINASSURE et bénéficiez de notre
-              <strong className="text-white"> CRM dédié</strong>, de nos produits, de
-              commissions attractives et d&apos;un accompagnement complet.
-            </p>
-            <ul className="mt-6 space-y-2.5 text-sm text-brand-100">
-              {[
-                "Un CRM professionnel avec téléphonie intégrée",
-                "Des leads qualifiés et des outils de vente",
-                "Des commissions transparentes, suivies en temps réel",
-                "Un back-office qui gère l'administratif pour vous",
-              ].map((t) => (
-                <li key={t} className="flex items-center gap-2.5">
-                  <Icon.check className="h-4 w-4 shrink-0 text-gold-400" /> {t}
-                </li>
-              ))}
-            </ul>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#contact" className="rounded-lg bg-gold-500 px-6 py-3.5 text-sm font-semibold text-brand-950 transition hover:bg-gold-400">
-                Devenir partenaire
-              </a>
-              <a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="rounded-lg border border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10">
-                Accéder à l&apos;espace pro
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            {[
-              ["CRM", "professionnel inclus"],
-              ["Leads", "fournis & qualifiés"],
-              ["Commissions", "suivies en direct"],
-              ["Support", "dédié partenaires"],
-            ].map(([b, s]) => (
-              <div key={s} className="rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur">
-                <p className="font-serif text-2xl font-semibold text-gold-400">{b}</p>
-                <p className="mt-1 text-xs text-brand-100">{s}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ===== Contact ===== */}
       <section id="contact" className="mx-auto max-w-6xl px-5 py-20 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-2">
@@ -448,7 +382,6 @@ export default function Home() {
             <div>
               <p className="text-sm font-semibold text-white">Liens</p>
               <ul className="mt-3 space-y-2 text-sm text-brand-200">
-                <li><a href="#partenaire" className="transition hover:text-white">Devenir partenaire</a></li>
                 <li><a href="#contact" className="transition hover:text-white">Contact</a></li>
                 <li><a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="transition hover:text-white">Espace pro (CRM)</a></li>
               </ul>

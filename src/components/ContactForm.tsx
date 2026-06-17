@@ -54,7 +54,6 @@ export function ContactForm() {
         <option>Assurance auto</option>
         <option>Assurance habitation</option>
         <option>Mutuelle santé</option>
-        <option>Devenir partenaire (régie / agent)</option>
         <option>Autre</option>
       </select>
       <textarea
