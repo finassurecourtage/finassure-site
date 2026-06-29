@@ -16,14 +16,34 @@ const playfair = localFont({
   display: "swap",
 });
 
+const DESCRIPTION =
+  "FINASSURE Courtage, cabinet de courtage en assurance : assurance emprunteur, auto, habitation, santé. Économisez sur vos contrats avec un accompagnement humain.";
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://finassure.fr"),
   title: "FINASSURE Courtage — Protéger aujourd'hui, sécuriser demain",
-  description:
-    "FINASSURE Courtage, cabinet de courtage en assurance : assurance emprunteur, auto, habitation, santé. Économisez sur vos contrats avec un accompagnement humain.",
+  description: DESCRIPTION,
   openGraph: {
-    title: "FINASSURE Courtage",
-    description: "Protéger aujourd'hui, sécuriser demain.",
+    title: "FINASSURE Courtage — Protéger aujourd'hui, sécuriser demain",
+    description: DESCRIPTION,
     type: "website",
+    url: "https://finassure.fr",
+    siteName: "FINASSURE Courtage",
+    locale: "fr_FR",
+    images: [
+      {
+        url: "/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "FINASSURE Courtage",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FINASSURE Courtage",
+    description: DESCRIPTION,
+    images: ["/og.jpg"],
   },
 };
 
