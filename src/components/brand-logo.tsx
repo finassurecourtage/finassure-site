@@ -19,7 +19,7 @@ export function BrandLogo({
       <img
         src="/logo.png"
         alt="FINASSURE COURTAGE"
-        className={`h-12 w-auto object-contain ${dark ? "rounded-lg bg-white p-1.5" : ""}`}
+        className={`h-16 w-auto object-contain ${dark ? "rounded-lg bg-white p-1.5" : ""}`}
       />
     </span>
   );
