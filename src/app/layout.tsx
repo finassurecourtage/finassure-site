@@ -20,14 +20,14 @@ const DESCRIPTION =
   "FINASSURE Courtage, cabinet de courtage en assurance : assurance emprunteur, auto, habitation, santé. Économisez sur vos contrats avec un accompagnement humain.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://finassure.fr"),
+  metadataBase: new URL("https://www.finassure.fr"),
   title: "FINASSURE Courtage — Protéger aujourd'hui, sécuriser demain",
   description: DESCRIPTION,
   openGraph: {
     title: "FINASSURE Courtage — Protéger aujourd'hui, sécuriser demain",
     description: DESCRIPTION,
     type: "website",
-    url: "https://finassure.fr",
+    url: "https://www.finassure.fr",
     siteName: "FINASSURE Courtage",
     locale: "fr_FR",
     images: [
