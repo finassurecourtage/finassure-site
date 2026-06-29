@@ -17,7 +17,7 @@ export function BrandLogo({
     <span className={`inline-flex items-center ${className}`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/logo.png"
+        src="/logo-mark.png"
         alt="FINASSURE COURTAGE"
         className={`h-16 w-auto object-contain ${dark ? "rounded-lg bg-white p-1.5" : ""}`}
       />
