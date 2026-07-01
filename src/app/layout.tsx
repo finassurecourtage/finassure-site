@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 // Polices hébergées en local (RGPD : aucun appel à Google Fonts côté visiteur)
@@ -54,6 +55,7 @@ export default function RootLayout({
     <html lang="fr">
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
