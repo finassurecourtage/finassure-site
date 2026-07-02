@@ -21,7 +21,8 @@ export function RecruitForm() {
     setErrorMsg("");
 
     // Enregistre aussi la candidature directement dans le CRM (non bloquant).
-    fetch("https://finassure.online/api/candidates/create", {
+    // NB : domaine canonique "www" — sans lui, la redirection 308 casse le CORS.
+    fetch("https://www.finassure.online/api/candidates/create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
