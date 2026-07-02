@@ -19,6 +19,14 @@ export function RecruitForm() {
     const data = Object.fromEntries(new FormData(form).entries());
     setStatus("sending");
     setErrorMsg("");
+
+    // Enregistre aussi la candidature directement dans le CRM (non bloquant).
+    fetch("https://finassure.online/api/candidates/create", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }).catch(() => undefined);
+
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
