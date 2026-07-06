@@ -333,7 +333,7 @@ export default function PartenairePage() {
           </div>
           <p className="mt-2 text-xs text-brand-300">
             © 2026 FINASSURE COURTAGE — SAS au capital de 1 000 €, 144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine.
-            Mandataire en assurance (ORIAS à compléter).
+            Mandataire en assurance — ORIAS n° 26009519.
           </p>
         </div>
       </footer>

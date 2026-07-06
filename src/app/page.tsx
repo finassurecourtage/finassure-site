@@ -396,7 +396,7 @@ export default function Home() {
             <p>
               © 2026 FINASSURE COURTAGE — SAS au capital de 1 000 €, siège social
               144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine. Mandataire en
-              assurance — immatriculation ORIAS (à compléter). Les contrats sont
+              assurance — immatriculation ORIAS n° 26009519. Les contrats sont
               souscrits auprès de nos compagnies partenaires. Tous droits réservés.
             </p>
           </div>
