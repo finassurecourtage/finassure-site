@@ -389,6 +389,9 @@ export default function Home() {
               <ul className="mt-3 space-y-2 text-sm text-brand-200">
                 <li><a href="#contact" className="transition hover:text-white">Contact</a></li>
                 <li><a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="transition hover:text-white">Espace pro (CRM)</a></li>
+                <li><a href="/mentions-legales" className="transition hover:text-white">Mentions légales</a></li>
+                <li><a href="/confidentialite" className="transition hover:text-white">Confidentialité (RGPD)</a></li>
+                <li><a href="/cookies" className="transition hover:text-white">Cookies</a></li>
               </ul>
             </div>
           </div>
@@ -396,7 +399,8 @@ export default function Home() {
             <p>
               © 2026 FINASSURE COURTAGE — SAS au capital de 1 000 €, siège social
               144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine. Mandataire en
-              assurance — immatriculation ORIAS n° 26009519. Les contrats sont
+              assurance — immatriculation ORIAS n° 26009519 (vérifiable sur
+              www.orias.fr). Les contrats sont
               souscrits auprès de nos compagnies partenaires. Tous droits réservés.
             </p>
           </div>

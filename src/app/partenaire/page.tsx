@@ -330,10 +330,13 @@ export default function PartenairePage() {
             <a href="https://finassure.fr" className="transition hover:text-white">Site principal</a>
             <a href={CRM_URL} target="_blank" rel="noopener noreferrer" className="transition hover:text-white">Espace pro (CRM)</a>
             <a href="#candidater" className="transition hover:text-white">Candidater</a>
+            <a href="/mentions-legales" className="transition hover:text-white">Mentions légales</a>
+            <a href="/confidentialite" className="transition hover:text-white">Confidentialité</a>
+            <a href="/cookies" className="transition hover:text-white">Cookies</a>
           </div>
           <p className="mt-2 text-xs text-brand-300">
             © 2026 FINASSURE COURTAGE — SAS au capital de 1 000 €, 144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine.
-            Mandataire en assurance — ORIAS n° 26009519.
+            Mandataire en assurance — ORIAS n° 26009519 (vérifiable sur www.orias.fr).
           </p>
         </div>
       </footer>
