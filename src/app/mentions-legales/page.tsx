@@ -18,6 +18,8 @@ export default function MentionsLegalesPage() {
           <br />
           RCS Nanterre — SIREN 106 464 779 — SIRET 10646477900011.
           <br />
+          Code APE : 66.22Z (activités des agents et courtiers d&apos;assurances).
+          <br />
           Courtier / mandataire en assurance immatriculé à l&apos;ORIAS sous le
           numéro <strong>26009519</strong>, vérifiable sur{" "}
           <a href="https://www.orias.fr" target="_blank" rel="noreferrer" className="text-brand-700 underline">
