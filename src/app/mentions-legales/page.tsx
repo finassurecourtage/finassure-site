@@ -32,8 +32,8 @@ export default function MentionsLegalesPage() {
           Contact :{" "}
           <a href="mailto:conseil@finassure.fr" className="text-brand-700 underline">
             conseil@finassure.fr
-          </a>
-          .
+          </a>{" "}
+          — Tél. 01 59 18 05 36.
         </p>
       </LegalSection>
 

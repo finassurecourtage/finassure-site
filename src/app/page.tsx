@@ -330,6 +330,17 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
+                  <Icon.phone className="h-5 w-5" />
+                </span>
+                <div>
+                  <p className="text-slate-400">Téléphone</p>
+                  <a href="tel:+33159180536" className="font-medium text-brand-900 transition hover:text-brand-700">
+                    01 59 18 05 36
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700">
                   <Icon.pin className="h-5 w-5" />
                 </span>
                 <div>
@@ -373,6 +384,10 @@ export default function Home() {
               <p className="mt-4 text-sm text-brand-200">
                 <a href="mailto:conseil@finassure.fr" className="font-medium text-white transition hover:text-gold-400">
                   conseil@finassure.fr
+                </a>
+                <br />
+                <a href="tel:+33159180536" className="font-medium text-white transition hover:text-gold-400">
+                  01 59 18 05 36
                 </a>
               </p>
             </div>
