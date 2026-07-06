@@ -16,7 +16,7 @@ export default function MentionsLegalesPage() {
           <br />
           Siège social : 144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine.
           <br />
-          RCS : <em>[à compléter]</em> — SIREN : <em>[à compléter]</em>.
+          RCS Nanterre — SIREN 106 464 779 — SIRET 10646477900011.
           <br />
           Courtier / mandataire en assurance immatriculé à l&apos;ORIAS sous le
           numéro <strong>26009519</strong>, vérifiable sur{" "}
@@ -25,7 +25,7 @@ export default function MentionsLegalesPage() {
           </a>
           .
           <br />
-          Directeur de la publication : <em>[à compléter]</em>.
+          Directeur de la publication : Jordan Sellem.
           <br />
           Contact :{" "}
           <a href="mailto:conseil@finassure.fr" className="text-brand-700 underline">
