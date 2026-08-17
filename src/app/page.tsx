@@ -36,12 +36,6 @@ const PRODUCTS = [
     name: "RC Pro & Décennale",
     desc: "Sécurisez votre activité professionnelle avec les garanties adaptées à votre métier.",
   },
-  {
-    img: "/img/p-epargne.jpg",
-    icon: Icon.trending,
-    name: "Épargne & prévoyance",
-    desc: "Préparez l'avenir et protégez vos proches en toute sérénité.",
-  },
 ];
 
 const ADVANTAGES = [
@@ -396,7 +390,7 @@ export default function Home() {
               <ul className="mt-3 space-y-2 text-sm text-brand-200">
                 <li><a href="#produits" className="transition hover:text-white">Assurance emprunteur</a></li>
                 <li><a href="#produits" className="transition hover:text-white">Auto &amp; habitation</a></li>
-                <li><a href="#produits" className="transition hover:text-white">Santé &amp; prévoyance</a></li>
+                <li><a href="#produits" className="transition hover:text-white">Santé &amp; RC Pro</a></li>
               </ul>
             </div>
             <div>
