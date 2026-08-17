@@ -4,15 +4,14 @@ import { BrandLogo } from "@/components/brand-logo";
 
 const CRM_URL = "https://finassure.online";
 
-// `featured` affiche la pastille dorée « Notre spécialité ».
-// Aucun produit n'est mis en avant pour l'instant : à réattribuer si besoin.
-const PRODUCTS: {
-  img: string;
-  icon: (p: React.SVGProps<SVGSVGElement>) => JSX.Element;
-  name: string;
-  desc: string;
-  featured?: boolean;
-}[] = [
+const PRODUCTS = [
+  {
+    img: "/img/p-emprunteur.jpg",
+    icon: Icon.shield,
+    name: "Assurance emprunteur",
+    desc: "Changez d'assurance de prêt (loi Lemoine) et économisez souvent plus de 10 000 € sur la durée, à garanties équivalentes.",
+    featured: true,
+  },
   {
     img: "/img/p-auto.jpg",
     icon: Icon.car,
@@ -129,7 +128,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-md text-lg text-brand-100">
               FINASSURE compare pour vous les meilleures assurances et négocie les
-              tarifs. Auto, habitation, santé, professionnels… avec un
+              tarifs. Prêt immobilier, auto, habitation, santé… avec un
               accompagnement humain, de A à Z.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -153,7 +152,7 @@ export default function Home() {
           <div className="flex animate-fade-up items-center justify-center [animation-delay:120ms]">
             <div className="w-full max-w-sm rounded-2xl border border-white/40 bg-white/95 p-6 text-slate-800 shadow-float backdrop-blur">
               <p className="text-sm font-semibold text-brand-800">Estimez votre économie</p>
-              <p className="mt-1 text-xs text-slate-500">Exemple d&apos;économie</p>
+              <p className="mt-1 text-xs text-slate-500">Assurance emprunteur — exemple</p>
               <div className="mt-4 space-y-3">
                 <div className="flex items-center justify-between rounded-lg bg-slate-50 px-3 py-2.5 text-sm">
                   <span className="text-slate-500">Votre contrat actuel</span>
@@ -165,8 +164,8 @@ export default function Home() {
                 </div>
                 <div className="rounded-xl bg-brand-800 px-3 py-4 text-center text-white">
                   <p className="text-xs text-brand-100">Économie estimée</p>
-                  <p className="font-serif text-3xl font-semibold text-gold-400">≈ 504 €</p>
-                  <p className="text-[11px] text-brand-200">par an, à garanties équivalentes</p>
+                  <p className="font-serif text-3xl font-semibold text-gold-400">≈ 7 560 €</p>
+                  <p className="text-[11px] text-brand-200">sur la durée restante du prêt</p>
                 </div>
               </div>
               <a href="#contact" className="mt-4 block rounded-lg bg-brand-800 py-3 text-center text-sm font-semibold text-white transition hover:bg-brand-900">
@@ -181,7 +180,7 @@ export default function Home() {
       <section className="border-b border-slate-100 bg-white">
         <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-slate-100 px-5 py-10 text-center md:grid-cols-4">
           {[
-            ["5", "familles de garanties"],
+            ["+10 000 €", "d'économie moyenne (emprunteur)"],
             ["24h", "pour une première réponse"],
             ["15+", "assureurs partenaires"],
             ["100%", "accompagnement humain"],
@@ -202,8 +201,8 @@ export default function Home() {
             Une assurance pour chaque besoin
           </h2>
           <p className="mt-4 text-slate-500">
-            Nous vous accompagnons sur l&apos;ensemble de vos contrats, du
-            particulier au professionnel.
+            Nous vous accompagnons sur l&apos;ensemble de vos contrats, avec une
+            spécialité reconnue : l&apos;assurance de prêt immobilier.
           </p>
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -395,6 +394,7 @@ export default function Home() {
             <div>
               <p className="text-sm font-semibold text-white">Produits</p>
               <ul className="mt-3 space-y-2 text-sm text-brand-200">
+                <li><a href="#produits" className="transition hover:text-white">Assurance emprunteur</a></li>
                 <li><a href="#produits" className="transition hover:text-white">Auto &amp; habitation</a></li>
                 <li><a href="#produits" className="transition hover:text-white">Santé &amp; prévoyance</a></li>
               </ul>

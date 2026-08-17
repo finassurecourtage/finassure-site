@@ -18,7 +18,7 @@ const playfair = localFont({
 });
 
 const DESCRIPTION =
-  "FINASSURE Courtage, cabinet de courtage en assurance : auto, habitation, santé, RC Pro, épargne. Économisez sur vos contrats avec un accompagnement humain.";
+  "FINASSURE Courtage, cabinet de courtage en assurance : assurance emprunteur, auto, habitation, santé. Économisez sur vos contrats avec un accompagnement humain.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.finassure.fr"),

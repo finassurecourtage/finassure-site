@@ -72,7 +72,8 @@ export function ContactForm() {
         <input required type="tel" name="telephone" placeholder="Téléphone" className={field} />
       </div>
       <input required type="email" name="email" placeholder="Email" className={field} />
-      <select name="sujet" defaultValue="Assurance auto" className={field}>
+      <select name="sujet" defaultValue="Assurance emprunteur" className={field}>
+        <option>Assurance emprunteur</option>
         <option>Assurance auto</option>
         <option>Assurance habitation</option>
         <option>Mutuelle santé</option>
