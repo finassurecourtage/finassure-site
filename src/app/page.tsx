@@ -1,6 +1,8 @@
 import { ContactForm } from "@/components/ContactForm";
 import { Icon } from "@/components/icons";
 import { BrandLogo } from "@/components/brand-logo";
+import { HeroVideo } from "@/components/hero-video";
+import { ScrollEffectsMount } from "@/components/scroll-effects-mount";
 
 const CRM_URL = "https://finassure.online";
 
@@ -96,19 +98,9 @@ export default function Home() {
 
       {/* ===== Hero ===== */}
       <section id="top" className="relative overflow-hidden">
-        {/* Vidéo de fond (skyline) + voile marine */}
+        {/* Vidéo de fond (skyline), chargée après le premier rendu + voile marine */}
         <div className="absolute inset-0 z-0 bg-brand-950">
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            poster="/video/hero-poster.jpg"
-          >
-            <source src="/video/hero.mp4" type="video/mp4" />
-          </video>
+          <HeroVideo />
           <div className="absolute inset-0 bg-gradient-to-br from-brand-950/95 via-brand-900/85 to-brand-800/70" />
         </div>
         <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-5 py-24 text-white lg:grid-cols-2 lg:py-32">
@@ -172,15 +164,15 @@ export default function Home() {
 
       {/* ===== Chiffres ===== */}
       <section className="border-b border-slate-100 bg-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-slate-100 px-5 py-10 text-center md:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 divide-x divide-slate-100 px-5 py-10 text-center md:grid-cols-4" data-reveal-group>
           {[
             ["+10 000 €", "d'économie moyenne (emprunteur)"],
             ["24h", "pour une première réponse"],
             ["15+", "assureurs partenaires"],
             ["100%", "accompagnement humain"],
           ].map(([big, small]) => (
-            <div key={small} className="px-2">
-              <p className="font-serif text-3xl font-semibold text-brand-800">{big}</p>
+            <div key={small} className="px-2" data-reveal>
+              <p className="font-serif text-3xl font-semibold text-brand-800" data-counter>{big}</p>
               <p className="mt-1 text-xs text-slate-500">{small}</p>
             </div>
           ))}
@@ -189,7 +181,7 @@ export default function Home() {
 
       {/* ===== Produits ===== */}
       <section id="produits" className="mx-auto max-w-6xl px-5 py-20 lg:py-24">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center" data-reveal>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">Nos solutions</p>
           <h2 className="mt-3 font-serif text-3xl font-semibold text-brand-900 sm:text-4xl">
             Une assurance pour chaque besoin
@@ -199,13 +191,14 @@ export default function Home() {
             spécialité reconnue : l&apos;assurance de prêt immobilier.
           </p>
         </div>
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-reveal-group>
           {PRODUCTS.map((p) => {
             const Glyph = p.icon;
             return (
               <article
                 key={p.name}
                 className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-float"
+                data-reveal
               >
                 <div className="relative h-44 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -244,16 +237,21 @@ export default function Home() {
       <section id="pourquoi" className="bg-brand-50/60 py-20 lg:py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-2">
           <div className="relative">
-            <div className="overflow-hidden rounded-3xl shadow-float">
+            <div className="h-[420px] overflow-hidden rounded-3xl shadow-float">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/handshake.jpg" alt="Un conseiller FINASSURE serre la main d'un client" className="h-[420px] w-full object-cover" />
+              <img
+                src="/img/handshake.jpg"
+                alt="Un conseiller FINASSURE serre la main d'un client"
+                className="h-[520px] w-full object-cover"
+                data-parallax="80"
+              />
             </div>
             <div className="absolute -bottom-6 -right-2 hidden rounded-2xl bg-brand-900 px-6 py-5 text-white shadow-float sm:block">
               <p className="font-serif text-3xl font-semibold text-gold-400">+10 000 €</p>
               <p className="text-xs text-brand-100">économisés en moyenne</p>
             </div>
           </div>
-          <div>
+          <div data-reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">Pourquoi FINASSURE</p>
             <h2 className="mt-3 font-serif text-3xl font-semibold text-brand-900 sm:text-4xl">
               Le courtage, en mieux
@@ -262,11 +260,11 @@ export default function Home() {
               Notre métier : défendre vos intérêts face aux assureurs et vous faire
               gagner du temps comme de l&apos;argent.
             </p>
-            <div className="mt-8 space-y-5">
+            <div className="mt-8 space-y-5" data-reveal-group>
               {ADVANTAGES.map((a) => {
                 const Glyph = a.icon;
                 return (
-                  <div key={a.title} className="flex gap-4">
+                  <div key={a.title} className="flex gap-4" data-reveal>
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-800 text-gold-400">
                       <Glyph className="h-6 w-6" />
                     </div>
@@ -286,9 +284,9 @@ export default function Home() {
           <h3 className="text-center font-serif text-2xl font-semibold text-brand-900 sm:text-3xl">
             Comment ça marche ?
           </h3>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3" data-reveal-group>
             {STEPS.map((s) => (
-              <div key={s.n} className="relative rounded-2xl bg-white p-7 shadow-card">
+              <div key={s.n} className="relative rounded-2xl bg-white p-7 shadow-card" data-reveal>
                 <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gold-500 font-serif text-lg font-bold text-brand-950">
                   {s.n}
                 </div>
@@ -303,7 +301,7 @@ export default function Home() {
       {/* ===== Contact ===== */}
       <section id="contact" className="mx-auto max-w-6xl px-5 py-20 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div>
+          <div data-reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold-600">Contact</p>
             <h2 className="mt-3 font-serif text-3xl font-semibold text-brand-900 sm:text-4xl">
               Parlons de votre projet
@@ -355,7 +353,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card sm:p-8">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card sm:p-8" data-reveal>
             <ContactForm />
           </div>
         </div>
@@ -415,6 +413,8 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <ScrollEffectsMount />
     </div>
   );
 }

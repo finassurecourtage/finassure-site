@@ -44,3 +44,15 @@ body {
 .animate-fade-up {
   animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
+
+/* Le masquage des éléments révélés au scroll est posé par GSAP lui-même
+   (voir scroll-effects.tsx) : si le script ne se charge pas, le contenu
+   reste visible au lieu de disparaître. */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-kenburns,
+  .animate-fade-up {
+    animation: none !important;
+  }
+}
+
