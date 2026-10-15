@@ -86,6 +86,26 @@ export function ContactForm() {
         className={field}
       />
 
+
+      {/* Consentement RGPD : base légale du recontact, annoncée dans la
+          politique de confidentialité. Obligatoire avant envoi. */}
+      <label className="flex items-start gap-2 text-left text-xs leading-relaxed text-slate-500">
+        <input
+          required
+          type="checkbox"
+          name="consentement"
+          className="mt-0.5 h-4 w-4 shrink-0 rounded border-slate-300 text-brand-700 focus:ring-brand-500"
+        />
+        <span>
+          J&apos;accepte d&apos;être contacté(e) par téléphone, SMS et email au sujet de
+          mon assurance de prêt. Je peux retirer mon consentement à tout moment —{" "}
+          <a href="/confidentialite" className="underline hover:text-slate-700">
+            politique de confidentialité
+          </a>
+          .
+        </span>
+      </label>
+
       {status === "error" && (
         <p className="rounded-lg bg-red-50 px-3 py-2 text-xs text-red-700">{errorMsg}</p>
       )}

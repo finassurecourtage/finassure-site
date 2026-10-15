@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ConfidentialitePage() {
   return (
-    <LegalLayout title="Politique de confidentialité (RGPD)" updated="juillet 2026">
+    <LegalLayout title="Politique de confidentialité (RGPD)" updated="octobre 2026">
       <p>
         La présente politique décrit comment FINASSURE COURTAGE collecte et traite
         vos données personnelles, conformément au Règlement Général sur la
@@ -26,49 +26,78 @@ export default function ConfidentialitePage() {
         </p>
       </LegalSection>
 
-      <LegalSection title="Données collectées">
+      <LegalSection title="Sources de collecte">
         <p>
-          Via nos formulaires (contact, demande de devis, candidature partenaire),
-          nous collectons : nom, prénom, adresse email, numéro de téléphone, ville,
-          et les informations que vous nous communiquez librement (message,
-          situation).
+          Vos données sont collectées via les formulaires de notre site et via les
+          formulaires publicitaires que nous diffusons sur Facebook et Instagram
+          (Meta). Dans ce second cas, Meta Platforms Ireland Ltd héberge le
+          formulaire et nous transmet vos réponses.
         </p>
       </LegalSection>
 
-      <LegalSection title="Finalités et base légale">
+      <LegalSection title="Données collectées">
+        <p>
+          Nom, prénom, téléphone, email, ainsi que les informations sur votre prêt
+          que vous nous communiquez : montant restant, date de signature et
+          assurance actuelle.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="Bases légales">
         <ul className="list-disc space-y-1 pl-5">
-          <li>Répondre à vos demandes et vous recontacter (mesures précontractuelles / intérêt légitime).</li>
-          <li>Étudier les candidatures pour rejoindre notre réseau (votre consentement).</li>
-          <li>Gérer la relation commerciale et le suivi (exécution / intérêt légitime).</li>
+          <li>
+            Votre <strong>consentement</strong>, recueilli par une case à cocher,
+            pour vous contacter par téléphone, SMS et email au sujet de votre
+            assurance de prêt. Vous pouvez le retirer à tout moment.
+          </li>
+          <li>
+            Les <strong>mesures précontractuelles</strong> prises à votre demande,
+            pour réaliser votre étude et vous présenter des offres.
+          </li>
+          <li>
+            Votre <strong>consentement</strong>, pour étudier les candidatures des
+            professionnels souhaitant rejoindre notre réseau.
+          </li>
         </ul>
       </LegalSection>
 
       <LegalSection title="Destinataires">
         <p>
-          Vos données sont destinées aux équipes habilitées de FINASSURE COURTAGE et
-          à nos sous-traitants techniques (hébergeur, outils d&apos;envoi
-          d&apos;emails), qui n&apos;y accèdent que pour les besoins du service.
-          Elles ne sont ni vendues ni cédées à des tiers à des fins commerciales.
+          FINASSURE Courtage et, si vous souhaitez souscrire, l&apos;assureur
+          partenaire retenu. Vos données ne sont jamais vendues ni cédées à des
+          tiers à des fins commerciales.
+        </p>
+      </LegalSection>
+
+      <LegalSection title="Lieu de traitement">
+        <p>
+          Vos données peuvent être traitées depuis Israël, pays bénéficiant
+          d&apos;une décision d&apos;adéquation de la Commission européenne.
         </p>
       </LegalSection>
 
       <LegalSection title="Durée de conservation">
         <p>
-          Les données de prospection sont conservées <strong>3 ans</strong> à
-          compter du dernier contact. Les données liées à un contrat sont conservées
-          selon les durées légales applicables au secteur de l&apos;assurance.
+          <strong>3 ans</strong> à compter de notre dernier contact si vous ne
+          devenez pas client. Les données liées à un contrat sont conservées selon
+          les durées légales applicables au secteur de l&apos;assurance.
         </p>
       </LegalSection>
 
       <LegalSection title="Vos droits">
         <p>
-          Vous disposez d&apos;un droit d&apos;accès, de rectification,
-          d&apos;effacement, de limitation, d&apos;opposition et de portabilité de
-          vos données. Pour les exercer, écrivez à{" "}
+          Vous pouvez accéder à vos données, les rectifier, les effacer, vous
+          opposer à tout nouveau contact ou retirer votre consentement en écrivant
+          à{" "}
           <a href="mailto:conseil@finassure.fr" className="text-brand-700 underline">
             conseil@finassure.fr
           </a>
-          . Vous pouvez également introduire une réclamation auprès de la CNIL (
+          . Vous pouvez aussi vous inscrire gratuitement sur la liste
+          d&apos;opposition{" "}
+          <a href="https://www.bloctel.gouv.fr" target="_blank" rel="noreferrer" className="text-brand-700 underline">
+            Bloctel
+          </a>{" "}
+          et adresser une réclamation à la CNIL (
           <a href="https://www.cnil.fr" target="_blank" rel="noreferrer" className="text-brand-700 underline">
             www.cnil.fr
           </a>
