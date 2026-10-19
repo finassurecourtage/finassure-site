@@ -20,8 +20,9 @@ export default function MentionsLegalesPage() {
           <br />
           Code APE : 66.22Z (activités des agents et courtiers d&apos;assurances).
           <br />
-          Courtier / mandataire en assurance immatriculé à l&apos;ORIAS sous le
-          numéro <strong>26009519</strong>, vérifiable sur{" "}
+          Courtier d&apos;assurance (COA) immatriculé à l&apos;ORIAS sous le
+          numéro <strong>26009519</strong>, adhérent de l&apos;association
+          professionnelle ENDYA, vérifiable sur{" "}
           <a href="https://www.orias.fr" target="_blank" rel="noreferrer" className="text-brand-700 underline">
             www.orias.fr
           </a>

@@ -44,7 +44,7 @@ const ADVANTAGES = [
   { icon: Icon.euro, title: "Les meilleurs tarifs", desc: "Nous comparons les offres de nos assureurs partenaires pour vous garantir le meilleur rapport prix / garanties." },
   { icon: Icon.headset, title: "Un conseiller dédié", desc: "Un interlocuteur unique, joignable, qui connaît votre dossier et vous accompagne de A à Z." },
   { icon: Icon.zap, title: "Des démarches simplifiées", desc: "On s'occupe de tout : comparaison, devis, résiliation de l'ancien contrat et mise en place." },
-  { icon: Icon.badge, title: "Indépendance & transparence", desc: "Mandataire en assurance immatriculé, nous vous conseillons en toute objectivité." },
+  { icon: Icon.badge, title: "Indépendance & transparence", desc: "Courtier en assurance immatriculé à l'ORIAS, nous vous conseillons en toute objectivité." },
 ];
 
 const STEPS = [
@@ -405,9 +405,10 @@ export default function Home() {
           <div className="mt-10 border-t border-white/10 pt-6 text-xs leading-relaxed text-brand-300">
             <p>
               © 2026 FINASSURE COURTAGE — SAS au capital de 1 000 €, siège social
-              144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine. Mandataire en
-              assurance — immatriculation ORIAS n° 26009519 (vérifiable sur
-              www.orias.fr). Les contrats sont
+              144 avenue Charles de Gaulle, 92200 Neuilly-sur-Seine. Courtier
+              d&apos;assurance — immatriculation ORIAS n° 26009519 (vérifiable sur
+              www.orias.fr), adhérent de l&apos;association professionnelle ENDYA.
+              Les contrats sont
               souscrits auprès de nos compagnies partenaires. Tous droits réservés.
             </p>
           </div>
